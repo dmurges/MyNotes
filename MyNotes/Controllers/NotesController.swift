@@ -35,7 +35,7 @@ class NotesController: UITableViewController {
         
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(handleReset))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "plus-1"), style: .plain, target: self, action: #selector(handleAdd))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "plus") , style: .plain, target: self, action: #selector(handleAdd))
         self.navigationItem.title = "My Notes"
         
         
