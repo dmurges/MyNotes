@@ -20,7 +20,7 @@ class NoteCell: UITableViewCell {
             if let seconds = note?.timestamp {
                 let timestampDate = NSDate(timeIntervalSince1970: seconds)
                 let dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "dd/MM/yyyy hh:mm:ss"
+                dateFormatter.dateFormat = "dd/MM/yyyy"
                 timeLabel.text = dateFormatter.string(from: timestampDate as Date)
             }
         }
@@ -91,7 +91,7 @@ class NoteCell: UITableViewCell {
         addSubview(timeLabel)
         timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 15).isActive = true
         timeLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8).isActive = true
-        timeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/3).isActive = true
+        timeLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.2).isActive = true
         timeLabel.heightAnchor.constraint(equalToConstant: 12).isActive = true
         
         

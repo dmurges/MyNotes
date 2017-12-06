@@ -1,4 +1,6 @@
-
+/***************************
+ Using the NSFetchedResultsController instead
+ ***************************/
 
 import UIKit
 import CoreData
@@ -31,10 +33,6 @@ class TestController: UITableViewController, NSFetchedResultsControllerDelegate 
         
         return frc
     }()
-    
-    
-    
-    
     
     
     
